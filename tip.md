@@ -1,0 +1,1 @@
+https://seongjin.me/how-to-prepare-cka-exam/
