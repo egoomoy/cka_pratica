@@ -1,0 +1,27 @@
+apiVersin: v1 
+kind: Pod
+metadata:
+  name: redis
+  labels:
+    name: redis
+spec:
+  containers:
+  - name: redis123
+    image: redis123
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: <Port>
+
+
+
+# apiVersion, kind, metadata, spec 필수
+# labels 아래에서는 구분을 위한 아무 값이나 할당 할 수 있다.
+
+# kubectl create -f pod-definition.yml
+# kubectl get pods
+# kubectl describe pod myapp
+
+
